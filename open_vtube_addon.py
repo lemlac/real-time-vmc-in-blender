@@ -255,7 +255,13 @@ class VIEW3D_PT_OPENVTUBE_PANEL(bpy.types.Panel):
         row.scale_y = 1.3
         row.operator("openvtube.start_receiver", icon='PLAY')
         row.operator("openvtube.stop_receiver", icon='PAUSE')
-        classes = (OpenVTubeProperties, OP_OPENVTUBE_START, OP_OPENVTUBE_STOP, VIEW3D_PT_OPENVTUBE_PANEL)
+
+classes = (
+    OpenVTubeProperties,
+    OP_OPENVTUBE_START,
+    OP_OPENVTUBE_STOP,
+    VIEW3D_PT_OPENVTUBE_PANEL
+)
 
 def register():
     for cls in classes:
